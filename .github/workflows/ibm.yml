@@ -20,10 +20,10 @@ env:
   IBM_CLOUD_REGION: us-south
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
   REGISTRY_HOSTNAME: us.icr.io
-  IMAGE_NAME: iks-test
+  IMAGE_NAME: hello-app
   IKS_CLUSTER: c8dmgf9f059d8judd3f0
-  DEPLOYMENT_NAME: iks-test
-  PORT: 5001
+  DEPLOYMENT_NAME: hello
+  PORT: 8000
 
 jobs:
   setup-build-publish-deploy:
